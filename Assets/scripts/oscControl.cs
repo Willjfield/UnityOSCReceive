@@ -86,7 +86,7 @@ public class oscControl : MonoBehaviour {
 					float valueY = float.Parse (item.Value.packets[lastPacketIndex].Data[1].ToString());
 					UnityEngine.Debug.Log("touch event: "+valueX+","+valueY);
 					*/
-					obPos.Set((values[0]/100)-5,0,-(values[1]/100)-9);
+					obPos.Set((values[0]/100)-5,0,(values[1]/100)-9);
 					transform.position=obPos;
 					obPos.Set(0,0,0);
 
